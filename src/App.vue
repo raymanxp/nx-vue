@@ -13,12 +13,31 @@
       </header>
       <section class="nx-main">body</section>
       <nav class="nx-nav">
+        <label>
           <button><clr-icon class="icon-red" shape="chat-bubble" size="36"></clr-icon></button>
+          <span>News</span>
+        </label>
+        <label>
           <button><clr-icon class="icon-yellow" shape="shopping-bag" size="36"></clr-icon></button>
+          <span>News</span>
+          </label>
+        <label>
           <button><clr-icon class="icon-blue" shape="image" size="36"></clr-icon></button>
+          <span>News</span>
+          </label>
+        <label>
           <button><clr-icon class="icon" shape="devices" size="36"></clr-icon></button>
+          <span>News</span>
+          </label>
+        <label>
           <button><clr-icon class="icon" shape="cog" size="36"></clr-icon></button>
-          <button><clr-icon class="icon" shape="power" size="36"></clr-icon></button></nav>
+          <span>News</span>
+          </label>
+        <label>
+          <button><clr-icon class="icon" shape="power" size="36"></clr-icon></button>
+          <span>News</span>
+          </label>
+      </nav>
       <footer class="nx-footer">
         <div class="nx-footer-container">
           <div class="nx-footer-controller">
