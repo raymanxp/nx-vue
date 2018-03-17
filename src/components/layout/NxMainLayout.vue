@@ -31,7 +31,7 @@ export default {
   flex: 1;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 374px) {
   .nx-nav {
     width: 100%;
   }
