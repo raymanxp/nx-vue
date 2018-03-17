@@ -9,7 +9,7 @@
     <nav class="nx-nav">
         <slot name="nx-nav"></slot>
     </nav>
-    <footer>
+    <footer class="nx-footer">
         <slot name="nx-footer"></slot>
     </footer>
   </div>
@@ -43,5 +43,9 @@ export default {
   margin: 0 auto;
   overflow-x: scroll;
   white-space: nowrap;
+}
+.nx-footer {
+  height: 4.75rem;
+  padding: 0 1rem 1rem 1rem;
 }
 </style>
