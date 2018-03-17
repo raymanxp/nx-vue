@@ -40,8 +40,6 @@
       </nav>
       <footer class="nx-footer">
         <div class="nx-footer-container">
-          <div class="nx-footer-controller">
-          </div>
           <div class="nx-footer-actions">
             <label><button>+</button>Options</label>
             <label><button>A</button>Start</label>
