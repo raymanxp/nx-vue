@@ -22,9 +22,15 @@ export default {
 </script>
 
 <style lang="scss">
+@media screen and (orientation: portrait) {
+  .nx-main {
+    // display: flex;
+  }
+}
 .nx-header {
-  height: 6rem;
-  padding: 1rem 2rem;;
+  height: 5rem;
+  padding: 1rem 2rem;
+  overflow: scroll;
 }
 .nx-main {
   justify-content: space-between;

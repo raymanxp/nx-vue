@@ -1,7 +1,7 @@
 <template>
   <div class="nx-nav-container">
     <label v-for="item in navItems" :key="item.label" :item="item">
-      <button @focus="toggle($event,item)"
+      <button @focus="toggle($event, item)"
               @blur="toggle($event, item)">
         <clr-icon class="icon"
                   size="28"
@@ -30,7 +30,6 @@ export default {
   },
   methods: {
     toggle: function (event, item) {
-      console.log(event, item)
       item.showLabel = !item.showLabel
     }
   }
