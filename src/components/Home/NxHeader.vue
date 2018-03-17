@@ -1,15 +1,15 @@
 <template>
-  <header class="nx-header">
+  <div class="nx-header-container">
     <div class="profiles">
       <div>you</div>
     </div>
     <div class="system-status">
       <span class="item">{{time}}</span>
-      <clr-icon class="item" shape="wifi" size="28"></clr-icon>
-      100%
-      <clr-icon class="item" shape="battery" size="28" dir="right"></clr-icon>
+      <clr-icon class="item" shape="wifi" size="24"></clr-icon>
+      <span class="item">100%</span>
+      <clr-icon class="item" shape="battery" size="24" dir="right"></clr-icon>
     </div>
-  </header>
+  </div>
 </template>
 
 <script>
@@ -24,22 +24,22 @@ export default {
 </script>
 
 <style lang="scss">
-.nx-header {
+.nx-header-container {
   display: flex;
-  height: 6rem;
-  padding: 1rem;
+  width: 100%;
+}
+.profiles {
+  flex: 1;
+}
 
-  .profiles {
-    flex: 1;
-  }
-
-  .system-status {
-    text-align: right;
-    flex: 1;
-    .item {
-      display: inline-block;
-      margin: 0 0.5rem;
-    }
+.system-status {
+  text-align: right;
+  flex: 1;
+  .item {
+    font-size:.8rem;
+    font-weight: 400;
+    display: inline-block;
+    margin: 0 0.5rem;
   }
 }
 </style>

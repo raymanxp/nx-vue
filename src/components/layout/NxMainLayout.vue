@@ -1,6 +1,6 @@
 <template>
   <div class="nx-container">
-    <header>
+    <header class="nx-header">
       <slot name="nx-header"></slot>
     </header>
     <main class="nx-main">
@@ -25,7 +25,7 @@ export default {
 .nx-header {
   display: flex;
   height: 6rem;
-  padding: 1rem;
+  padding: 1rem 2rem;;
 }
 .nx-main {
   justify-content: space-between;
