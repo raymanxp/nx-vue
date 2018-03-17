@@ -23,7 +23,6 @@ export default {
 
 <style lang="scss">
 .nx-header {
-  display: flex;
   height: 6rem;
   padding: 1rem 2rem;;
 }

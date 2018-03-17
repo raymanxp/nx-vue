@@ -9,8 +9,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.nx-main {
-  justify-content: space-between;
-  flex: 1;
-}
+
 </style>

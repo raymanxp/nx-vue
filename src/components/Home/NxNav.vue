@@ -1,35 +1,39 @@
 <template>
   <div class="nx-nav-container">
-    <label>
-      <button><clr-icon class="icon-red" shape="chat-bubble" size="28"></clr-icon></button>
-      <span>News</span>
+    <label v-for="item in navItems" :key="item.label" :item="item">
+      <button @focus="toggle($event,item)"
+              @blur="toggle($event, item)">
+        <clr-icon class="icon"
+                  size="28"
+                  v-bind:class="[item.class]"
+                  v-bind:shape="item.shape"></clr-icon>
+      </button>
+      <span v-show="item.showLabel">{{item.label}}</span>
     </label>
-    <label>
-      <button><clr-icon class="icon-yellow" shape="shopping-bag" size="28"></clr-icon></button>
-      <span>News</span>
-      </label>
-    <label>
-      <button><clr-icon class="icon-blue" shape="image" size="28"></clr-icon></button>
-      <span>News</span>
-      </label>
-    <label>
-      <button><clr-icon class="icon" shape="devices" size="28"></clr-icon></button>
-      <span>News</span>
-      </label>
-    <label>
-      <button><clr-icon class="icon" shape="cog" size="28"></clr-icon></button>
-      <span>News</span>
-      </label>
-    <label>
-      <button><clr-icon class="icon" shape="power" size="28"></clr-icon></button>
-      <span>News</span>
-      </label>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'NxNav'
+  name: 'NxNav',
+  data () {
+    return {
+      navItems: [
+        {label: 'News', shape: 'chat-bubble', class: 'icon-red', showLabel: false},
+        {label: 'eShop', shape: 'shopping-bag', class: 'icon-yellow', showLabel: false},
+        {label: 'Album', shape: 'image', class: 'icon-blue', showLabel: false},
+        {label: 'Devices', shape: 'devices', class: '', showLabel: false},
+        {label: 'System Settings', shape: 'cog', class: '', showLabel: false},
+        {label: 'Sleep Mode', shape: 'power', class: '', showLabel: false}
+      ]
+    }
+  },
+  methods: {
+    toggle: function (event, item) {
+      console.log(event, item)
+      item.showLabel = !item.showLabel
+    }
+  }
 }
 </script>
 
@@ -38,10 +42,14 @@ export default {
 .nx-nav-container {
   label {
     display: inline-block;
+    height: 70px;
+    vertical-align: middle;
+    width: 56px;
     & span {
       color:rgb(0, 204, 255);
-      text-align: center;
       display: block;
+      line-height: 2rem;
+      text-align: center;
     }
   }
   button {
