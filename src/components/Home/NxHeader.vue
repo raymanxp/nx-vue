@@ -7,14 +7,19 @@
       <span class="item">{{time}}</span>
       <clr-icon class="item" shape="wifi" size="28"></clr-icon>
       100%
-      <clr-icon class="item" shape="battery" size="48" dir="right"></clr-icon>
+      <clr-icon class="item" shape="battery" size="28" dir="right"></clr-icon>
     </div>
   </header>
 </template>
 
 <script>
 export default {
-  name: 'NxHeader'
+  name: 'NxHeader',
+  data: function () {
+    return {
+      time: 'time'
+    }
+  }
 }
 </script>
 

@@ -27,18 +27,20 @@ export default {
     flex: 1;
     height: 100%;
     text-align: right;
-    align-items: center;
-    justify-content: center;
+    padding: 0 .25rem;
     label {
       flex: 1;
-      margin-right: 0.5rem;
+      font-size: .8rem;
+      margin: 0 1.25rem;
+      vertical-align: middle;
     }
     button {
       appearance: none;
       border-radius: 100%;
-      height: 1.5rem;
-      width: 1.5rem;
+      height: 1rem;
       margin-right: 0.25rem;
+      padding: 0;
+      width: 1rem;
     }
   }
 }

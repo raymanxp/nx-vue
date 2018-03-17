@@ -45,7 +45,7 @@ export default {
   white-space: nowrap;
 }
 .nx-footer {
-  height: 4.75rem;
-  padding: 0 1rem 1rem 1rem;
+  height: 2rem;
+  padding: 0 .25rem;
 }
 </style>

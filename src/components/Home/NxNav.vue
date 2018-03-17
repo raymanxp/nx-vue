@@ -1,27 +1,27 @@
 <template>
   <div class="nx-nav-container">
     <label>
-      <button><clr-icon class="icon-red" shape="chat-bubble" size="36"></clr-icon></button>
+      <button><clr-icon class="icon-red" shape="chat-bubble" size="32"></clr-icon></button>
       <span>News</span>
     </label>
     <label>
-      <button><clr-icon class="icon-yellow" shape="shopping-bag" size="36"></clr-icon></button>
+      <button><clr-icon class="icon-yellow" shape="shopping-bag" size="32"></clr-icon></button>
       <span>News</span>
       </label>
     <label>
-      <button><clr-icon class="icon-blue" shape="image" size="36"></clr-icon></button>
+      <button><clr-icon class="icon-blue" shape="image" size="32"></clr-icon></button>
       <span>News</span>
       </label>
     <label>
-      <button><clr-icon class="icon" shape="devices" size="36"></clr-icon></button>
+      <button><clr-icon class="icon" shape="devices" size="32"></clr-icon></button>
       <span>News</span>
       </label>
     <label>
-      <button><clr-icon class="icon" shape="cog" size="36"></clr-icon></button>
+      <button><clr-icon class="icon" shape="cog" size="32"></clr-icon></button>
       <span>News</span>
       </label>
     <label>
-      <button><clr-icon class="icon" shape="power" size="36"></clr-icon></button>
+      <button><clr-icon class="icon" shape="power" size="32"></clr-icon></button>
       <span>News</span>
       </label>
   </div>
@@ -48,12 +48,12 @@ export default {
     -webkit-appearance: none;
     appearance: none;
 
-    width: 3.75rem;
-    height: 3.75rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 100%;
     border: 0;
     background-color: rgb(105, 105, 105);
-    margin: 0 0.5rem;
+    margin: 0 0.25rem;
 
     &:focus {
       border: 5px solid rgb(0, 195, 255);
