@@ -86,28 +86,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@media screen and (orientation: portrait) {
-  .nx-main-container {
-    display: flex;
-    flex-wrap: wrap !important;
-    flex-direction: column;
-    height: 100%;
-    justify-content: flex-start;
-    overflow-y: scroll;
-    overflow-x: auto;
-    padding: 0 1.5rem;
-  }
+@mixin main-container() {
+  display: block;
+  height: 100%;
+  padding: 0 2rem;
 }
 .nx-main-container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  overflow-x: scroll;
-  overflow-y: auto;
-  padding: 0 2rem;
+  @include main-container();
+  flex-wrap: wrap;
   article {
+    display: inline-block;
     flex: 1;
     margin-right: 6px;
     header {
@@ -136,6 +124,16 @@ export default {
         object-fit: cover;
       }
     }
+  }
+}
+@media screen and (min-height: 200px) and (max-height: 600px) {
+  .nx-main-container {
+    @include main-container();
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    align-items: center;
   }
 }
 </style>

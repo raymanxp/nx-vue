@@ -33,8 +33,8 @@ export default {
   overflow: scroll;
 }
 .nx-main {
-  justify-content: space-between;
   flex: 1;
+  overflow: scroll;
 }
 
 @media (max-width: 374px) {
