@@ -96,16 +96,24 @@ export default {
   flex-wrap: wrap;
   article {
     display: inline-block;
+    position: relative;
     flex: 1;
     margin-right: 6px;
     header {
       line-height: 1.5rem;
       position: absolute;
+      white-space: nowrap;
+      left: -75px;
       text-align: center;
       white-space: nowrap;
+      width: 300px;
+      overflow: hidden;
+      text-overflow: ellipsis;
       color:  rgb(0, 195, 255);
     }
     .box-art {
+      display: block;
+      position: relative;
       margin-top: 1.5rem;
       button {
         appearance: none;

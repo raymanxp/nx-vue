@@ -41,14 +41,18 @@ export default {
 .nx-nav-container {
   label {
     display: inline-block;
+    position: relative;
     height: 70px;
     vertical-align: middle;
     width: 56px;
     & span {
       color:rgb(0, 204, 255);
       display: block;
+      left: -27px;
       line-height: 2rem;
+      position: absolute;
       text-align: center;
+      width: 112px;
     }
   }
   button {
