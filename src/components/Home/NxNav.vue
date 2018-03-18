@@ -67,7 +67,7 @@ export default {
     background-color: rgb(105, 105, 105);
     margin: 0 0.25rem;
 
-    &:focus {
+    &:focus, &:hover, &:active {
       border: 3px solid rgb(0, 195, 255);
     }
   }

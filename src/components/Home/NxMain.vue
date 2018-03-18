@@ -95,7 +95,7 @@ export default {
   @include main-container();
   flex-wrap: wrap;
   article {
-    display: inline-block;
+    -webkit-overflow-scrolling: touch;
     position: relative;
     flex: 1;
     margin-right: 6px;
@@ -121,7 +121,7 @@ export default {
         background: none;
         padding: 0;
 
-        &:focus {
+        &:focus, &:hover, &:active {
           border: 4px solid rgb(0, 195, 255);
         }
       }
