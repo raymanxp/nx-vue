@@ -27,6 +27,7 @@ export default {
 .nx-header-container {
   display: flex;
   width: 100%;
+  height: 100%;
 }
 .profiles {
   flex: 1;
