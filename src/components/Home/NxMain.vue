@@ -126,6 +126,17 @@ export default {
     }
   }
 }
+@media screen and (min-width: 355px) and (max-width: 400px) {
+  .nx-main-container {
+    display: flex;
+    article {
+      .box-art img{
+        height: 125px;
+        width: 125px;
+      }
+    }
+  }
+}
 @media screen and (min-height: 200px) and (max-height: 600px) {
   .nx-main-container {
     @include main-container();
